@@ -1,12 +1,37 @@
+.traffic-light-container {
+    width: 250px;
+    margin: 75px auto;
+    padding: 30px;
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 
-/* 
+.light {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    border-radius: 50%;
+    background-color: gray;
+    position: relative;
+    transition: background-color 0.3s;
+    
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.light.red {
+    background-color: #fd0101;
+}
 
-*/
+.light.yellow {
+    background-color: #fcfc05;
+}
+
+.light.green {
+    background-color: #02ff02;
+}
+.light.glow {
+    box-shadow: 0 0 60px 30px rgb(240, 240, 117);
+}
